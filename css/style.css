@@ -140,7 +140,7 @@ ul li #cont:hover {
     border: none;
     letter-spacing: 1px;
     margin-top: 40px;
-    background-color: gray;
+    background-color: rgb(65, 62, 62);
     color: rgb(245, 238, 238);
     cursor: pointer;
     transition: 0.5s ease;

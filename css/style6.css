@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 40px 60px;
+  background-color: #f1f1f1;
+}
+
+.text-section {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.text-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.text-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid #000;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ICONOS */
+.icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border: 2px solid #000;
+  gap: 40px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100px;
+  margin-top: 15px;
+}
+
+.icon-item img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.icon-item p {
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+}
+
+/* IMAGEN PRINCIPAL */
+.image-section {
+  width: 50%;
+  position: relative;
+}
+
+.image-section img {
+  width: 80%; 
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto; 
+}
+
+
+

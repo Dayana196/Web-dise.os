@@ -102,8 +102,8 @@ body, html {
 .image-section img {
   width: 80%; 
   border-radius: 20px;
-  display: block;
-  margin: 0 auto; 
+  display: block; 
+  border-radius: 0;
 }
 
 

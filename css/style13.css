@@ -13,7 +13,9 @@ body {
   justify-content: center;
   padding: 40px;
   overflow: hidden;
+  
 }
+
 
 .container {
   display: flex;
@@ -69,10 +71,12 @@ body {
 }
 
 h1 {
-  font-size: 48px;
-  font-weight: 400;
+  margin-bottom: -1%;
+  font-size: 80px;
+  font-weight: 300;
   color: #111;
   line-height: 1.1;
+  
 }
 
 button {
@@ -142,5 +146,17 @@ button {
   top: -90px;
   width: 130px;
   left: -50px;
+}
+.fondo{
+  width: 280px;
+  height: 460px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: 480px;
+  border-radius: 20px;
+  opacity: 0.8;
+
 }
 

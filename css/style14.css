@@ -69,6 +69,10 @@ body {
   z-index: 1;
 }
 
+.fondo{
+  border-image: Gradient bg.png;
+}
+
 
 
 

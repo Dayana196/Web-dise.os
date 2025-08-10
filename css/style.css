@@ -5,6 +5,14 @@
     font-family: 'poppins' sans-serif;
  }
 
+ @media (max-width:960px){
+    header{
+        flex-direction: row;
+        padding: 0px 30px;
+        justify-content: space-between;
+    }
+ }
+
  .container {
     width: 100%;
     height: 100vh;

@@ -1,0 +1,69 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Sección principal con imagen de fondo */
+    .hero {
+        position: relative;
+        background-image: url('../src/img/niños.png'); /* Cambia por tu imagen */
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4); /* oscurece la imagen */
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 90%;
+    }
+
+    .btn {
+        background-color: white;
+        color: black;
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    /* Sección inferior */
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 0;
+    }
+
+    .stat {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .stat img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    @media (max-width: 768px) {
+        .hero h1 {
+            font-size: 2rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+    }

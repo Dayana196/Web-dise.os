@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F6E6E4;
+    color: #3B2E2B;
+}
+
+.boba {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding-left: 10%;
+}
+
+.boba img {
+    max-width: 550px; 
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover; 
+}
+
+
+/* Texto */
+.boba-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.boba-icon {
+    width: 30%;
+    margin-bottom: -15px;
+}
+
+.boba-text h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.boba-text p {
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3B2E2B;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Imagen con forma detrás */
+.boba-image {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+}
+
+.boba-image img {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+
+}
+
+/* Tarjetas */
+.boba-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px; 
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left; 
+    max-width: 300px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+
+.stat-card img {
+    width: 80px;
+    height: auto;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .boba {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .boba-text p {
+        margin: 0 auto 20px;
+    }
+
+    .boba-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+}

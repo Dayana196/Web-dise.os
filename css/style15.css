@@ -1,0 +1,173 @@
+:root {
+    --color-title: #252525;
+    --color-text: #515151;
+    --background: #457D61;
+    --color-button: #FFFFFF;
+}
+
+body {
+    margin-left: 13rem;
+    overflow-x: hidden;
+}
+
+.title h1 {
+    color: var(--colot-title);
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 30px;
+}
+
+.title p {
+    color: var(--color-text);
+    margin-bottom: 30px;
+    margin-left: 1px;
+}
+
+.button a {
+    background: var(--background);
+    color: var(--color-button);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.button a:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.imagen1 img {
+    position: absolute;
+    bottom: 1rem;
+    width: 120px;
+    height: 13rem; 
+    left: 16rem;
+}
+
+.imagen2 img {
+    position: absolute;
+    bottom: 4rem;
+    width: 120px;
+    height: 13rem; 
+    left: 25rem;
+}
+
+.center img {
+    position: absolute;
+    bottom: 4rem;
+    width: 18rem;
+    height: 30rem; 
+    left: 35rem;
+}
+
+.photo1 img {
+    position: absolute;
+    bottom: 21rem;
+    left: 55rem;
+    width: 7rem;
+    height: 13rem; 
+}
+
+.photo2 img {
+    position: absolute;
+    bottom: 16rem;
+    left: 64rem;
+    width: 7rem;
+    height: 13rem; 
+}
+
+.icons .sim1 img{
+    position: absolute;
+    bottom: 1rem;
+    width: 50px;
+    height: 57rem; 
+    left: 28rem;   
+}
+
+.icons .sim2 img{
+    position: absolute;
+    bottom: 1rem;
+    width: 50px;
+    height: 33rem; 
+    left: 58rem;   
+}
+
+.textos-der {
+    position: absolute;
+    bottom: 1.9rem;
+    left: 58rem;
+    width: 300rem;
+    height: 13rem; 
+}
+
+.textos-der {
+    font-size: 15px;
+}
+.textos-der h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+    .title h1 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    .title p {
+        font-size: 0.9rem;
+    }
+
+    .button a {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+
+    .imagen1 img,
+    .imagen2 img,
+    .center img,
+    .photo1 img,
+    .photo2 img,
+    .icons .sim1 img,
+    .icons .sim2 img {
+        position: static;
+        width: auto;
+        height: auto;
+        max-width: 80%;
+        margin: 0.5rem auto;
+        display: block;
+    }
+
+    .izquierda, 
+    .center, 
+    .derecha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textos-der {
+        position: static;
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .icons img {
+        height: 2rem;
+        width: auto;
+    }
+}

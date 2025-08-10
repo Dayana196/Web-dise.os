@@ -1,0 +1,249 @@
+:root {
+    --color-title: #252525;
+    --color: #515151;
+    --background: #252525;
+    --color-button: #d1d1d1;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container{
+    justify-content: center;
+}
+
+.title h1 {
+    margin-left: 550px;
+    color: var(--color-title);
+    margin-top: -0.5rem;
+    font-size: 2.5rem;
+}
+
+.title p {
+    color: var(--color);
+    margin-top: -1rem;
+    margin-left: 550px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    
+}
+
+.button {
+    justify-content: center;
+    margin-top: -1px;
+    margin-left: 550;
+}
+
+.button a {
+    font-family: "Open Sans", sans-serif;
+    background: var(--background);
+    color: var(--color-button);
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.6rem;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    margin-left: 630px;
+}
+
+.button a:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.red {
+    margin-top: 1.4rem;
+    margin-left: 579px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.red img {
+    width: 11rem;
+    height: 22rem;
+}
+
+
+.beige {
+    position: absolute;
+    bottom: 209px;
+    left: 27rem;
+
+}
+.beige img {
+    width: 9rem;
+    height: 10.5rem; 
+}
+
+
+.blue {
+    position: absolute;
+    bottom: 63px;
+    left: 27rem;
+}
+.blue img {
+    width: 9rem;
+    height: 138px; 
+}
+
+
+.grey {
+    position: absolute;
+    bottom: 7rem;
+    left: 328px;
+}
+.grey img {
+    width: 6rem;
+    height: 8.5rem;  
+}
+
+
+.black {
+    position: absolute;
+    bottom: 185px;
+    left: 772px;
+}
+.black img {
+    width: 9rem;
+    height: 11rem;
+}
+
+
+.yellow {
+    position: absolute;
+    bottom: 25px;
+    left: 48.2rem;
+}
+.yellow img {
+    width: 9rem;
+    height: 150px;
+}
+
+
+.white {
+    position: absolute;
+    bottom: 9rem;
+    left: 925px;
+}
+.white img {
+    width: 6rem;
+    height: 9.5rem; 
+}
+
+.text1 p {
+    color: var(--color);
+    position: absolute;
+    bottom: 18rem;
+    left: 300px;
+    line-height: 1.6;
+}
+
+
+.text2 p {
+    color: var(--color);
+    position: absolute;
+    bottom: 1rem;
+    left: 990px;
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+
+
+
+.curva1 {
+    position: absolute;
+    bottom: 34rem;
+    left: 300px;
+}
+.curva1 img {
+    width: 11rem;
+    height: auto;
+}
+.circle1 {
+    position: absolute;
+    bottom: 28.3rem;
+    left: 350px;
+}
+.circle1 img {
+    width: 5rem;
+    height: auto; 
+}
+
+.circle2 {
+    position: absolute;
+    bottom: 31rem;
+    left: 925px;
+}
+.circle2 img {
+    width: 5.2rem;
+    height: auto;
+}
+.curva2 {
+    position: absolute;
+    bottom: 28.2rem;
+    left: 880px;
+}
+.curva2 img {
+    width: 11rem;
+    height: auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .title h1, 
+    .title p, 
+    .button a {
+        margin-left: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button {  
+        margin-left: 183px;
+        margin-bottom: 50px;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .title p {
+        font-size: 0.9rem;
+    }
+
+    .button a {
+        margin-left: 1rem;
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .red, .grey, .beige, .blue, .black, .yellow, .white {
+        position: static;
+        margin: 0;
+        text-align: center;
+    }
+
+    .red img, .grey img, .beige img, .blue img, .black img, .yellow img, .white img {
+        width: 6rem;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .curva1, .circle1, .circle2, .curva2 {
+        display: none;
+    }
+
+    .text1 p, .text2 p {
+        position: static;
+        margin: 1rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+}

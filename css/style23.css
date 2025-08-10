@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.img-fondo {
+    margin-top: 0px;
+    width: 970px;
+    height: auto;
+    z-index: -1;
+}
+.img-fondo img {
+    z-index: -1;
+}
+
+.titles {
+    color: white;
+    margin-top: -600px;
+    margin-left: 60px;
+}
+.conteiner h1 {
+    font-size: 50px;
+}
+.conteiner p {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #ffffff;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.cuadros {
+    display: flex;
+    color: white;
+    margin-top: 180px;
+    margin-left: 60px;
+    gap: 50px;
+}
+
+.uno,
+.dos,
+.tres {
+    width: 250px;
+    height: 150px;
+    margin-top: -40px;
+    background-color: rgba(149, 149, 149, 0.432);
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.uno h1,
+.dos h1,
+.tres h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.uno p,
+.dos p,
+.tres p {
+    margin-top: 15px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-fondo {
+        width: 100%;
+        height: auto;
+    }
+
+    .titles {
+        margin-top: -300px;
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .conteiner h1 {
+        font-size: 32px;
+    }
+
+    .conteiner p {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .btn {
+        position: static;
+        margin: 20px auto 0;
+    }
+    .btn a {
+        color: white;
+    }
+
+    .cuadros {
+        color: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin: 140px auto 0;
+    }
+
+    .uno,
+    .dos,
+    .tres {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+}

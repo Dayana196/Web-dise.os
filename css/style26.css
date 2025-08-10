@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.todo {
+    background-color: #080C15;
+    width: auto;
+    height: 800px;
+}
+
+.text {
+    margin-top: 70px;
+    margin-left: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+.conteiner h1, h2 {
+    font-size: 50px;
+}
+.conteiner h1{
+    color: white;
+}
+.conteiner h2 {
+    color: rgb(175, 0, 0);
+    margin-left: 105px;
+    margin-top: -58px;
+}
+.images-hamb {
+    margin-top: 50px;
+}
+.images-hamb img {
+    width: 350px;
+    height: 65px;
+}
+.pe p {
+    margin-top: 30px;
+    color: white;
+    font-size: 17px;
+}
+
+.btn {
+    background-color: rgb(175, 0, 0);
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.ft-hamb {
+    margin-left: 440px;
+    margin-top: -500px;
+    z-index: -1;
+}
+.ft-hamb img {
+    position: relative;
+    z-index: -1;
+    width: 700px;
+    height: 800px;
+}
+
+.rectangle {
+    z-index: 2;
+    margin-top: -200px;
+    margin-bottom: 100px;
+}
+.rectangle img {
+    z-index: 2;
+    width: 200px;
+    height: 80px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .todo {
+        height: auto;
+        padding: 20px;
+    }
+
+    .text {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .conteiner h1, 
+    .conteiner h2 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .conteiner h2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .images-hamb img {
+        width: 80%;
+        height: auto;
+    }
+
+    .pe p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    .ft-hamb {
+        margin: 20px auto 0 auto;
+    }
+
+    .ft-hamb img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rectangle {
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .rectangle img {
+        width: 45%;
+        height: auto;
+    }
+}

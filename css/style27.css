@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    margin: 60px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.img-fondo {
+    margin-top: 0px;
+    z-index: -1;
+}
+.img-fondo img {
+    z-index: -1;
+    width: 1200px;
+    height: 800px;
+}
+
+
+
+.cuadro {
+    background-color: rgba(149, 149, 149, 0.432);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-top: -40rem;
+    margin-left: 50px;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+}
+
+
+.conteiner {
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.conteiner span {
+    margin: 20px;
+}
+
+.conteiner h1 {
+    letter-spacing: 2px;
+    font-size: 65px;
+}
+.conteiner p {
+    letter-spacing: 2px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #519BFD;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.fts {
+    margin-top: -775px;
+    margin-left: 870px;
+}
+
+.fts img {
+    display: flex;
+    width: 230px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .img-fondo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cuadro {
+        position: relative;
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .conteiner h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .conteiner p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    .fts {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fts img {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+    }
+}

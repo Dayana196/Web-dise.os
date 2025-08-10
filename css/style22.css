@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    margin: 100px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.todo {
+    background-color: #010625;
+}
+
+.conteiner h1 {
+    color: white;
+    font-size: 50px;
+    padding: 50px 60px;
+}
+.conteiner p {
+    color: white;
+    font-size: 12px;
+    margin-top: -30px;
+    margin-left: 63px;
+}
+.btn {
+    background-color: white;
+    margin-left: 63px;
+    width: 140px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.dos-images {
+    margin-top: -351px;
+    margin-left: 480px;
+}
+.dos-images img {
+    padding-right: 20px;
+    width: 190px;
+    height: 230px;
+}
+
+.img-medio {
+    margin-top: 150px;
+    margin-left: 30px;
+}
+.img-medio img {
+    width: 450px;
+    height: 200px;
+}
+
+.text-medio {
+    color: white;
+    font-size: 12px;
+    margin-top: -270px;
+    margin-left: 550px;
+}
+
+.text-medio img {
+    width: 70px;
+    height: auto;
+}
+
+.text-medio h1 {
+    margin-top: 20px;
+}
+.text-medio p {
+    margin-top: 10px;
+}
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 26px;
+}
+
+.images img {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .conteiner h1 {
+        font-size: 32px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .conteiner p {
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    .dos-images {
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .dos-images img {
+        width: 45%;
+        height: auto;
+    }
+
+    .img-medio {
+        margin: 30px auto 0 auto;
+        text-align: center;
+    }
+
+    .img-medio img {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-medio {
+        margin: 20px auto 0 auto;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .text-medio h1 {
+        font-size: 24px;
+    }
+
+    .images {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .images img {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+    }
+}

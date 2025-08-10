@@ -1,0 +1,199 @@
+/* === ESTILOS BASE QUE YA TIENES === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f8f8;
+    color: #333;
+}
+
+.plant-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    position: relative; /* 🔹 clave para que la burbuja quede dentro */
+    overflow: hidden;    /* evita que se salga visualmente */
+}
+
+.burbuja-verde {
+    position: absolute;
+    top: 0;       /* pegada arriba */
+    left: 0;      /* pegada a la izquierda */
+    width: 600px; /* ajusta tamaño */
+    z-index: 0;   /* detrás del texto */
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-area {
+    flex: 1 1 400px;
+    max-width: 450px;
+    
+}
+
+.text-area h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.text-area h1 span {
+    color: #4CAF50;
+}
+
+.text-area p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.image-area {
+    position: relative;
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    position: absolute;
+    max-width: 60%;
+    height: auto;
+    z-index: 1;
+}
+
+.main-plant {
+    position: relative;
+    max-width: 40%;
+    z-index: 2;
+}
+
+/* Círculos decorativos */
+.circle {
+    position: absolute;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #777;
+    background: white;
+    white-space: nowrap;
+}
+
+.circle1 {
+    top: 20%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.circle2 {
+    bottom: 15%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+}
+
+.bottom-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* === RESPONSIVE === */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-area {
+        max-width: 100%;
+    }
+
+    .image-area {
+        margin-top: 20px;
+    }
+
+    .bubble {
+        max-width: 60%;
+    }
+
+    .main-plant {
+        max-width: 50%;
+    }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .text-area h1 {
+        font-size: 2rem;
+    }
+
+    .bubble {
+        max-width: 80%;
+    }
+
+    .main-plant {
+        max-width: 70%;
+    }
+
+    .circle {
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+
+    .bottom-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+}

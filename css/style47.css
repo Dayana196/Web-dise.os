@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 40px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.todo {
+    background-color: #F8F8F8;
+}
+
+.izq {
+    margin: 80px 40px;
+}
+.conteiner h1 {
+    font-size: 40px;
+}
+.conteiner h2 {
+    font-size: 39px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.conteiner p {
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #000000;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.linea {
+    margin-top: -90px;
+}
+.linea img {
+
+    width: 10px;
+    height: 160px;
+}
+
+.camera {
+    margin-left: 500px;
+    margin-top: -330px;
+    margin-right: 50px;
+}
+.camera img {
+    width: 450px;
+    height: auto;
+}
+
+.circle {
+    margin-left: 830px;
+    margin-top: -430px;
+}
+.circle img {
+    width: 110px;
+    height: auto;
+}
+
+
+
+
+.cuadros {
+    display: flex;
+    margin-top: 350px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.uno,
+.dos,
+.tres,
+.cuatro {
+    background-color: #ffffff;
+    width: 14rem;
+    height: 9rem;
+}
+
+.uno h1,
+.dos h1,
+.tres h1,
+.cuatro h1 {
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.uno p,
+.dos p,
+.tres p,
+.cuatro p {
+    font-size: 10px;
+    margin-left: 40px;
+}
+
+
+
+
+
+.dos {
+    background-color: #E2E7F1;
+    width: 13rem;
+}
+
+
+
+.tres {
+    background-color: #ffffff;
+}
+.cuatro {
+    background-color: #E2E7F1;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        display: block;
+    }
+
+    .todo {
+        padding: 20px;
+    }
+
+    .izq {
+        margin: 40px 20px;
+    }
+
+    .conteiner h1 {
+        font-size: 28px;
+    }
+
+    .conteiner h2 {
+        font-size: 26px;
+        margin-left: 0;
+    }
+
+    .conteiner p {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .btn {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .linea {
+        display: none;
+    }
+
+    .camera {
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+
+    .camera img {
+        width: 80%;
+        height: auto;
+    }
+
+    .circle {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .circle img {
+        width: 70px;
+        height: auto;
+    }
+
+    .cuadros {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .uno, .dos, .tres, .cuatro {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .uno h1, .dos h1, .tres h1, .cuatro h1 {
+        margin: 0 0 10px 0;
+    }
+
+    .uno p, .dos p, .tres p, .cuatro p {
+        margin-left: 0;
+        font-size: 12px;
+    }
+}

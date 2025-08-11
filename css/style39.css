@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    margin: 50px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.img-fondo {
+    margin-top: 0px;
+    width: 970px;
+    height: auto;
+    z-index: -1;
+}
+.img-fondo img {
+    z-index: -1;
+}
+
+.conteiner {
+    text-align: end;
+    color: white;
+    margin-top: -500px;
+}
+
+.conteiner h1 {
+    margin-right: 40px;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+.conteiner p {
+    margin-right: 40px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ffffff;
+    position: absolute;
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.texts {
+    color: white;
+    display: flex;
+    gap: 100px;
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+.texts img {
+    margin-left: 20px;
+}
+
+.texts p {
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+
+.icons {
+    margin-top: -370px;
+    margin-left: 30px;
+}
+
+.icons img {
+    display: flex;
+    margin-bottom: 30px;
+
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    .img-fondo {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner {
+        text-align: center;
+        margin-top: -300px;
+    }
+
+    .conteiner h1 {
+        font-size: 28px;
+        margin-right: 0;
+    }
+
+    .conteiner p {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .btn {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .texts {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 90px;
+        margin-left: 0;
+    }
+
+    .texts p { color: black;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .icons img {
+        margin-bottom: 0;
+    }
+}

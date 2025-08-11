@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 50px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.wall {
+    margin-top: 0px;
+    z-index: -1;
+}
+.wall img {
+    z-index: -1;
+    width: 1000px;
+}
+
+.conteiner {
+    margin-top: -650px;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.medio h1 {
+    font-size: 50px;
+}
+.medio p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.btn {
+    background-color: #000000;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.btn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.uno {
+    margin-left: 60px;
+    margin-top: 180px;
+}
+.uno img {
+    width: 150px;
+    height: auto;
+}
+.dos {
+    margin-left: 230px;
+    margin-top: -154px;
+}
+.dos img {
+    width: 150px;
+    height: auto;
+}
+.tres {
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.tres img {
+    width: 320px;
+    height: auto;
+}
+.cuatro {
+    margin-left: 400px;
+    margin-top: -322px;
+}
+.cuatro img {
+    width: 300px;
+    height: 318px;
+}
+.cinco {
+    margin-left: 720px;
+    margin-top: -321px;
+}
+.cinco img {
+    width: 220px;
+    height: 156px;
+}
+.seis {
+    margin-left: 720px;
+    margin-top: 10px;
+}
+.seis img {
+    width: 220px;
+    height: 147px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wall img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .conteiner {
+        margin-top: -240px;
+        padding: 0 10px;
+    }
+
+    .conteiner .title h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .conteiner .title p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 30%;
+        margin-left: 140px;
+        border-radius: 10px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .btn a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+    }
+
+    .cuadro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 150px;
+        padding: 0 10px;
+    }
+
+    .cuadro > div {
+        margin: 0 !important;
+        flex: 1 1 45%;
+        max-width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cuadro img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        border-radius: 8px;
+    }
+}
+

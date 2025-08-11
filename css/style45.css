@@ -1,0 +1,116 @@
+body {
+    font-family: "space mono";
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.title-container {
+    position: relative;
+    width: 720px;
+    height: 640px;
+    color: white;
+}
+
+.title {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 4.2rem;
+    font-family: "Bitter";
+    margin: 0;
+}
+
+.title p {
+    margin: 0;
+    margin-top: 30px;
+    width: 580px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.title a {
+    text-decoration: none;
+    background-color: white;
+    color: #252525;
+    padding: 15px 40px;
+    align-self: flex-start;
+    margin-left: 70px;
+    border-radius: 25px;
+}
+
+.imgs-section {
+    display: flex;
+}
+
+.img-item {
+    position: relative;
+    width: 360px;
+    height: 329px;
+}
+
+.img-item .content {
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    position: absolute;
+}
+
+.content h1 {
+    margin-left: 20px;
+    color: rgb(109, 109, 109);
+    margin-top: 10px;
+    font-family: "Bitter";
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.content p {
+    margin-top: 1px;
+    margin-left: 20px;
+    color: gray;
+}
+
+.right-section {
+    width: 720px;
+    height: 960px;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    text-align: end;
+    right: 30px;
+}
+
+.text h1 {
+    margin-left: 20px;
+    color: rgb(109, 109, 109);
+    margin-top: 10px;
+    font-family: "Bitter";
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.text p {
+    margin-top: 1px;
+    margin-left: 20px;
+    color: gray;
+}
+
